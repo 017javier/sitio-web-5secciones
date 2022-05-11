@@ -1,0 +1,28 @@
+.fondoContacto{
+    background-image: url('../asset/img_portada_4.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 40vh;
+    background-attachment: fixed;
+    &__contenedor{
+        height: 20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    &__h2{
+        font-size: 4rem;
+        color: var(--white);
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-style: italic;
+        text-align: center;
+
+    }
+    &__btn{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}

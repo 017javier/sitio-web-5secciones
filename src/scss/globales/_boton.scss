@@ -1,0 +1,20 @@
+.btn{
+    display:inline;
+    padding: 0.9rem 1.75rem;
+    margin: 1rem;
+    background-color: var(--secondary);
+    color: var(--complemento);
+    font-size: 2rem;
+    letter-spacing: 0.4px;
+    transition: 0.3s;
+    border-radius:0.625rem;
+    border: 0;
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+    cursor: pointer;
+    &:hover{
+        background-color: var(--complemento);
+        color: var(--secondary);
+        box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+    }
+    
+}

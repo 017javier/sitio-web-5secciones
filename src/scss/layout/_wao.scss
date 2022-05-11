@@ -1,0 +1,44 @@
+.wao{
+    background-color: var(--primary-two);
+    &__content{
+        overflow: hidden;
+        border-radius: 0.625rem;
+        width: 90%;
+        margin: 0 auto;
+        
+    }
+    &__contenedor{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    &__text{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        background-color: var(--gris);
+    }
+    &__p{
+        font-size: 2rem;
+        color: var(--primary);
+        margin: 0 20px;
+    }
+}
+
+@media (max-width: 875px){
+    .wao{
+        background-color: var(--primary-two);
+        &__content{
+            overflow: hidden;
+            border-radius: 0.625rem;
+            
+        }
+        &__contenedor{
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        &__text{
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+    }
+}

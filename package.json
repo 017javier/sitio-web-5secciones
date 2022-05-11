@@ -1,0 +1,11 @@
+{
+  "name": "practica56-landing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./src/scss/style.scss ./src/css/style.css"
+  },
+  "author": "javier tovar",
+  "license": "ISC"
+}

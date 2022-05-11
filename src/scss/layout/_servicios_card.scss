@@ -1,0 +1,53 @@
+@use '../globales' as *;
+
+.servione{
+    .container{
+        padding-bottom: 100px;
+    }
+    &__contenedor{
+        max-width: 1200px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    &__box{
+        background-color: var(--gris);
+        height: 200px;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 0.625rem;
+        &:hover{
+            box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+        }
+    }
+    &__text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height:180px;
+    }
+    &__icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.8rem;
+        color: var(--secondary);
+        margin-top: 10px;
+        background-color: var(--white);
+        border-radius: 100%;
+        width: 50px;
+        height: 50px;
+    }
+    &__h2{
+        font-size: 2.4rem;
+        color: var(--primary);
+        text-align: center;
+        margin-top: 20px;
+    }
+    &__p{
+        font-size:1.6rem;
+        text-align: center;
+        color: var(--gris-two);
+        margin-top: 10px;
+    }
+}
