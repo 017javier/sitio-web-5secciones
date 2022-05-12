@@ -12,6 +12,9 @@
     <!-- icon -->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+
     <!-- style css -->
     <link rel="stylesheet" href="./src/css/style.css">
 </head>
@@ -21,7 +24,7 @@
             <nav class="header__nav">
     
                 <div class="header__logo">
-                    <a class="header__logo-a" href="#inicio">InterWebSite</a>
+                    <a class="header__logo-a" href="index.html">InterWebSite</a>
                 </div>
     
                 <div class="header__toggle" id="mobile-menu">
@@ -33,20 +36,18 @@
                 <ul class="header__menu">
                     
                     <li class="header__item">
-                        <a class="header__links"  href="#inicio">Inicio</a>
+                        <a class="header__links"  href="index.html">Inicio</a>
                     </li>
                     <li class="header__item">
-                        <a class="header__links"  href="#">Conócenos</a>
+                        <a class="header__links"  href="conocenos.html">Conócenos</a>
                     </li>
                     <li class="header__item">
                         <a class="header__links"  href="#">Alcance</a>
                     </li>
                     <li class="header__item">
-                        <a class="header__links"  href="#servicios">Servicios</a>
+                        <a class="header__links"  href="servicios.html">Servicios</a>
                     </li>
-                    <li class="header__item">
-                        <a class="header__links"  href="#blog">Productos</a>
-                    </li>
+                    
                     <li class="header__item">
                         <a class="header__links"  href="#contactos">Contactos</a>
                     </li>
@@ -59,15 +60,52 @@
         </header>
         <!-- fin del header -->
         <main>
+            <!-- hero -->
             <section class="hero" id="inico" >
                 <div class="container">
-                    <div class="hero__contenedor">
-                        <div class="hero__content">
-                            <h1 class="hero__h1">Bienvenidos a <span class="hero__span">InterWebSite</span></h1>
-                            <h3 class="hero__h3">Brindamos soluciones de acceso a internet inalánbrico de banda ancha</h3>
-                            <button class="btn hero__btn">Contactanos</button>
+                    
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="hero__contenedor">
+                                    <div class="hero__card">
+                                        <div class="hero__text">
+                                            <h1 class="hero__h1">Bienvenidos a <br> <span class="hero__span">InterWebSite</span></h1>
+                                            <p class="hero__p">Brindamos soluciones de acceso a internet inalánbrico de banda ancha</p>
+                                            <button class="btn hero__btn">Contactanos</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="hero__contenedor">
+                                    <div class="hero__card">
+                                        <div class="hero__text">
+                                            <h1 class="hero__h1">Bienvenidos a <br> <span class="hero__span">InterWebSite</span></h1>
+                                            <p class="hero__p">Brindamos soluciones de acceso a internet inalánbrico de banda ancha</p>
+                                            <button class="btn hero__btn">Contactanos</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="hero__contenedor">
+                                    <div class="hero__card">
+                                        <img src="./src/asset/img_portada_7.jpg" alt="" class="hero__img">
+                                        <div class="hero__text">
+                                            <h1 class="hero__h1">Bienvenidos a <br> <span class="hero__span">InterWebSite</span></h1>
+                                            <p class="hero__p">Brindamos soluciones de acceso a internet inalánbrico de banda ancha</p>
+                                            <button class="btn hero__btn">Contactanos</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
                         </div>
+                        
+                        <div class="swiper-pagination"></div>
                     </div>
+                    
                 </div>
             </section>
 
@@ -225,6 +263,11 @@
                 </div>
             </div>
         </footer>
+        <!-- Swiper JS -->
+        
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        
+
         <script src="./src/js/main.js"></script>
 </body>
 </html>
