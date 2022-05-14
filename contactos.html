@@ -12,6 +12,8 @@
     <!-- icon -->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
 
     <!-- style css -->
     <link rel="stylesheet" href="./src/css/style.css">
@@ -58,36 +60,47 @@
         </header>
         <!-- fin del header -->
         <main>
+            <!-- formulario -->
             <section class="conocenosHero">
                 <div class="container">
                     <div class="conocenosHero__contenedor">
                         <div class="conocenosHero__content">
-                            <h2 class="conocenosHero__h2">¿Quienes Somos?</h2>
+                            <h2 class="conocenosHero__h2">Contactos</h2>
                         </div>
                     </div>
                 </div>
             </section>
-
-            <section class="conocenosQuienes">
+            <Section class="formulario">
                 <div class="container">
-                    <div class="conocenosQuienes__contenedor">
-                        <div class="conocenosQuienes__imagen"><img class="somos__img" src="./src/asset/img_portada_2.jpg" alt=""></div>
-                        <article class="conocenosQuienes__textos">
-                            <h2 class="conocenosQuienes__h2">Nuestra Mision, Vision y Valores</h2>
-                            <p class="conocenosQuienes__p">Somos un equipo de trabajo que desde el año  2007 ofrecemos servicio Internet banda ancha vía inalambrica con el fin de proporcionarle a la comunidad una opción estable de comunicación.</p>
-                            <br>
-                            <p class="conocenosQuienes__p">Trabajando con tecnología eficiente de última generación permitiendo ofrecer servicios de banda ancha y planes adaptados para las necesidades de la Población Venezolana.</p>
-                            <br>
-                            <p class="conocenosQuienes__p">Nuestra cobertura se Extiende entre los principales Municipio del Edo. Carabobo como lo son: <br> 
-                                Guacara, San Joaquín, San Diego, Los Guayos y Valencia entre otros.</p>
-                            <br>
-                            <p class="conocenosQuienes__p">Nuestra Misión es brindar soluciones de conectividad  para tu negocio y hogar para satisfacer la demanda que existe hoy en día.</p>
-                            </article>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                    <form action="" method="post">
+                        <div class="formulario__contenedor">
 
+                            <div class="formulario-grupo formulario__row">
+                                <div class="formulario__control"><input type="text" name="name" placeholder="Escribe tu nombre" required="required" size="8"></div>
+                                <div class="formulario__control"><input class="formulario__control" type="email" name="email" placeholder="Escribe tu email" required="required" size="8"></div>
+                            </div>
+                            
+
+                            <div class="formulario-grupo formulario__row">
+                                <div class="formulario__control"><input  type="text" name="telefono" placeholder="Escribe tu telefono" required="required" size="8"></div>
+                                <div class="formulario__control"><input  type="text" name="compañia" placeholder="Compañia / Pyme" required="required" size="8"></div>
+                            </div>
+                            
+
+                            <div class="formulario-grupo">
+                                <input type="text" name="asunto" placeholder="Asunto" required="required" size="8">
+                            </div>
+
+                            
+                            <textarea type="text" name="mensaje" class="span12"  placeholder="Escribe tu mensaje" required="required" size="8"></textarea>
+                            
+                            <button type="submit" class="btn formulario-btn" aria-hidden="true">Enviar</button>
+                            
+                        </div>
+                    </form>
+                </div>
+            </Section>
+            
         </main>
         <footer class="footer">
             <div class="container">
@@ -116,9 +129,9 @@
                 </div>
             </div>
         </footer>
+        <!-- Swiper JS -->
         
-        
-
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
         
 
         <script src="./src/js/main.js"></script>
