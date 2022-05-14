@@ -1,0 +1,111 @@
+.serviciotecnico{
+    &__contenedor{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    &__img{
+        border-radius: 0.625rem;
+    }
+    &__textos{
+        margin: 10px;
+        padding: 10px;
+        align-self: center;
+        
+    }
+    &__h2{
+        font-size: 3.5rem;
+        color: var(--primary);
+        font-weight: 700;
+        font-style: italic;
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    &__p{
+        font-size: 2rem;
+    }
+    &__text{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        margin-left: 2rem;
+    }
+    &__contenido{
+        display: flex;
+        align-items: center;
+    }
+    &__icon{
+        font-size: 2rem;
+        color: var(--secondary);
+        margin-right: 10px;
+    }
+    &__p--p{
+        margin: 5px;
+    }
+    &__btn{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+}
+
+@media (max-width: 900px){
+    .serviciotecnico{
+        &__contenedor{
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        &__imagen{
+            margin: 0 auto;
+            width: 90%;
+            display: flex;
+            justify-content: center;
+        }
+        &__img{
+            border-radius: 0.625rem;
+        }
+        &__textos{
+            margin: 10px;
+            padding: 10px;
+            align-self: center;
+            border-radius: 0.625rem;
+            &:hover{
+                box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+            }
+            
+        }
+        &__h2{
+            font-size: 3.5rem;
+            color: var(--primary);
+            font-weight: 700;
+            font-style: italic;
+            text-align: center;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+        &__p{
+            font-size: 2rem;
+        }
+        &__text{
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            margin-left: 2rem;
+        }
+        &__contenido{
+            display: flex;
+            align-items: center;
+        }
+        &__icon{
+            font-size: 2rem;
+            color: var(--secondary);
+            margin-right: 10px;
+        }
+        &__p--p{
+            margin: 5px;
+        }
+        &__btn{
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+    
+    }
+}

@@ -952,5 +952,196 @@ img {
     box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
   }
 }
+.servicecardone {
+  background-color: var(--primary);
+}
+.servicecardone .container {
+  padding-bottom: 100px;
+}
+.servicecardone__contenedor {
+  max-width: 1200px;
+  display: grid;
+  border-radius: 0.625rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+.servicecardone__box {
+  display: flex;
+  align-items: center;
+  background-color: var(--gris);
+  margin: 10px;
+  padding: 20px;
+  border-radius: 0.625rem;
+}
+.servicecardone__box:hover {
+  background-color: var(--primary-two);
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+}
+.servicecardone__text {
+  height: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.servicecardone__h2, .servicecardone__p, .servicecardone__btn {
+  padding-bottom: 10px;
+}
+.servicecardone__h2 {
+  font-size: 3rem;
+  color: var(--primary);
+  text-align: center;
+  margin-top: 20px;
+}
+.servicecardone__p {
+  font-size: 2rem;
+  text-align: center;
+  color: var(--gris-two);
+  margin-top: 10px;
+}
+.servicecardone__btn {
+  font-size: 1.5rem;
+}
+.servicecardone__box:hover .servicecardone__h2 {
+  color: var(--white);
+}
+.servicecardone__box:hover .servicecardone__p {
+  color: var(--white);
+}
+
+@media (max-width: 900px) {
+  .servicecardone {
+    margin: 0 auto;
+  }
+  .servicecardone .container {
+    padding-bottom: 100px;
+  }
+  .servicecardone__contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .servicecardone__box {
+    display: flex;
+    align-items: center;
+    background-color: var(--gris);
+    margin: 10px;
+    padding: 20px;
+    border-radius: 0.625rem;
+  }
+  .servicecardone__box:hover {
+    background-color: var(--primary-two);
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+  }
+}
+@media (max-width: 567px) {
+  .servicecardone .container {
+    padding-bottom: 100px;
+  }
+  .servicecardone__contenedor {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.serviciotecnico__contenedor {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.serviciotecnico__img {
+  border-radius: 0.625rem;
+}
+.serviciotecnico__textos {
+  margin: 10px;
+  padding: 10px;
+  align-self: center;
+}
+.serviciotecnico__h2 {
+  font-size: 3.5rem;
+  color: var(--primary);
+  font-weight: 700;
+  font-style: italic;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.serviciotecnico__p {
+  font-size: 2rem;
+}
+.serviciotecnico__text {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+}
+.serviciotecnico__contenido {
+  display: flex;
+  align-items: center;
+}
+.serviciotecnico__icon {
+  font-size: 2rem;
+  color: var(--secondary);
+  margin-right: 10px;
+}
+.serviciotecnico__p--p {
+  margin: 5px;
+}
+.serviciotecnico__btn {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 900px) {
+  .serviciotecnico__contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .serviciotecnico__imagen {
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+  }
+  .serviciotecnico__img {
+    border-radius: 0.625rem;
+  }
+  .serviciotecnico__textos {
+    margin: 10px;
+    padding: 10px;
+    align-self: center;
+    border-radius: 0.625rem;
+  }
+  .serviciotecnico__textos:hover {
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+  }
+  .serviciotecnico__h2 {
+    font-size: 3.5rem;
+    color: var(--primary);
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .serviciotecnico__p {
+    font-size: 2rem;
+  }
+  .serviciotecnico__text {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+  }
+  .serviciotecnico__contenido {
+    display: flex;
+    align-items: center;
+  }
+  .serviciotecnico__icon {
+    font-size: 2rem;
+    color: var(--secondary);
+    margin-right: 10px;
+  }
+  .serviciotecnico__p--p {
+    margin: 5px;
+  }
+  .serviciotecnico__btn {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
