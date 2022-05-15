@@ -1243,5 +1243,122 @@ img {
     width: 100%;
   }
 }
+.alcance__contenedor {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  border-radius: 0.625rem;
+  justify-content: center;
+}
+.alcance__card {
+  background-color: var(--secondary);
+  width: 50%;
+  display: flex;
+  border-radius: 0.625rem;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+}
+.alcance__imagen {
+  order: 2;
+  width: 50%;
+}
+.alcance__img {
+  width: 100%;
+  display: block;
+}
+.alcance__text {
+  width: 50%;
+  order: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px;
+}
+.alcance__h2, .alcance__p, .alcance__social {
+  padding-bottom: 10px;
+}
+.alcance__h2 {
+  font-size: 2rem;
+  color: var(--primary);
+}
+.alcance__p {
+  font-size: 1.6rem;
+}
+.alcance__social--icon {
+  font-size: 3rem;
+  color: var(--primary);
+}
+.alcance .swiper-pagination {
+  position: absolute;
+  bottom: 5px;
+  overflow: visible;
+}
+.alcance .swiper-pagination-bullet {
+  background-color: var(--primary);
+}
+.alcance .swiper-pagination-bullet-active {
+  background-color: var(--complemento);
+}
+
+@media (max-width: 568px) {
+  .alcance__contenedor {
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 0.625rem;
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+  }
+  .alcance__card {
+    background-color: var(--secondary);
+    width: 50%;
+    display: flex;
+    border-radius: 0.625rem;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+  }
+  .alcance__text {
+    width: 50%;
+    order: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px;
+    padding: 5px;
+  }
+  .alcance__h2 {
+    font-size: 1.7rem;
+  }
+  .alcance__p {
+    font-size: 1.4rem;
+  }
+}
+.alcanceHero {
+  background-image: url("../asset/img_portada_8.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.alcanceHero__contenedor {
+  overflow: hidden;
+  width: 100%;
+  height: 25vh;
+}
+.alcanceHero__content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.alcanceHero__h2 {
+  color: var(--white);
+  font-style: italic;
+  font-size: 5rem;
+  text-align: center;
+}
+@media (max-width: 56.24875em) {
+  .alcanceHero__h2 {
+    font-size: 3.5rem;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

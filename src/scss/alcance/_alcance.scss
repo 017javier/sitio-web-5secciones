@@ -1,0 +1,109 @@
+.alcance{
+    
+    &__contenedor{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        border-radius: 0.625rem;
+        justify-content: center;
+        
+        
+    }
+    &__card{
+        background-color: var(--secondary);
+        width: 50%;
+        display: flex;
+        border-radius: 0.625rem;
+        overflow: hidden;
+        box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+        
+
+    }
+    &__imagen{
+        order: 2;
+        width: 50%;
+    
+    }
+    &__img{
+        width: 100%;
+        display: block;
+        
+    }
+    &__text{
+        width: 50%;
+        order: 1;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 10px;
+    }
+    &__h2,
+    &__p,
+    &__social{
+        padding-bottom: 10px;
+    }
+    &__h2{
+        font-size: 2rem;
+        color: var(--primary);
+    }
+    &__p{
+        font-size: 1.6rem;
+    }
+    
+    &__social--icon{
+        font-size: 3rem;
+        color: var(--primary);
+    }
+    .swiper-pagination{
+        position: absolute;
+        bottom: 5px;
+        overflow: visible;
+    }
+    .swiper-pagination-bullet{
+        background-color: var(--primary);
+    }
+    .swiper-pagination-bullet-active{
+        background-color: var(--complemento);
+    }
+    
+}
+@media (max-width: 568px) {
+    .alcance{
+    
+        &__contenedor{
+            width: 95%;
+            margin: 0 auto;
+            border-radius: 0.625rem;
+            box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+        }
+        &__card{
+            background-color: var(--secondary);
+            width: 50%;
+            display: flex;
+            border-radius: 0.625rem;
+            overflow: hidden;
+            box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+            
+    
+        }
+        
+        &__text{
+            width: 50%;
+            order: 1;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin: 0px;
+            padding: 5px;
+        }
+        &__h2{
+            font-size: 1.7rem;
+        }
+        &__p{
+            font-size: 1.4rem;
+        }
+        
+        
+        
+    }
+}
