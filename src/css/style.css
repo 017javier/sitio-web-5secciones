@@ -1249,6 +1249,7 @@ img {
   display: flex;
   border-radius: 0.625rem;
   justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
 }
 .alcance__card {
   background-color: var(--secondary);
@@ -1256,7 +1257,6 @@ img {
   display: flex;
   border-radius: 0.625rem;
   overflow: hidden;
-  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
 }
 .alcance__imagen {
   order: 2;
@@ -1312,8 +1312,6 @@ img {
     width: 50%;
     display: flex;
     border-radius: 0.625rem;
-    overflow: hidden;
-    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
   }
   .alcance__text {
     width: 50%;
@@ -1329,6 +1327,35 @@ img {
   }
   .alcance__p {
     font-size: 1.4rem;
+  }
+}
+@media (max-width: 450px) {
+  .alcance__contenedor {
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 0.625rem;
+  }
+  .alcance__card {
+    background-color: var(--white);
+    width: 100%;
+    display: flex;
+    border-radius: 0.625rem;
+  }
+  .alcance__imagen {
+    order: 2;
+    width: 0%;
+  }
+  .alcance__img {
+    width: 100%;
+    display: none;
+  }
+  .alcance__text {
+    width: 100%;
+    order: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px;
   }
 }
 .alcanceHero {

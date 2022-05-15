@@ -6,7 +6,7 @@
         display: flex;
         border-radius: 0.625rem;
         justify-content: center;
-        
+        box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
         
     }
     &__card{
@@ -15,14 +15,10 @@
         display: flex;
         border-radius: 0.625rem;
         overflow: hidden;
-        box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
-        
-
     }
     &__imagen{
         order: 2;
         width: 50%;
-    
     }
     &__img{
         width: 100%;
@@ -81,12 +77,7 @@
             width: 50%;
             display: flex;
             border-radius: 0.625rem;
-            overflow: hidden;
-            box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
-            
-    
         }
-        
         &__text{
             width: 50%;
             order: 1;
@@ -102,8 +93,37 @@
         &__p{
             font-size: 1.4rem;
         }
-        
-        
-        
+    }
+}
+@media (max-width: 450px) {
+    .alcance{
+    
+        &__contenedor{
+            width: 95%;
+            margin: 0 auto;
+            border-radius: 0.625rem;
+        }
+        &__card{
+            background-color: var(--white);
+            width: 100%;
+            display: flex;
+            border-radius: 0.625rem;
+        }
+        &__imagen{
+            order: 2;
+            width: 0%;
+        }
+        &__img{
+            width: 100%;
+            display: none;
+        }
+        &__text{
+            width: 100%;
+            order: 1;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin: 0px;
+        }
     }
 }
